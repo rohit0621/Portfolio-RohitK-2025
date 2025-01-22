@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Navigation Links</title>
+    <style>
+      /* Basic Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navigation Bar */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px;
+      }
+
+      nav a:hover {
+        background-color: #444;
+      }
+
+      nav a.active {
+        background-color: #fec233; /* Highlight active link */
+        color: #000;
+        font-weight: bold;
+      }
+
+      /* Sections */
+      section {
+        height: 100vh;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      #home {
+        background: #f4f4f4;
+      }
+      #about {
+        background: #ddd;
+      }
+      #services {
+        background: #bbb;
+      }
+      #contact {
+        background: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">Home Section</section>
+    <section id="about">About Section</section>
+    <section id="services">Services Section</section>
+    <section id="contact">Contact Section</section>
+    <!-- cards container  -->
+    <!-- <template id="card-template">
+      <div class="card">
+        <h3 class="card-title"></h3>
+        <p class="card-content"></p>
+      </div>
+    </template>
+
+    <div id="cards-container"></div> -->
+
+    <!-- cards container  -->
+    <template class="resume-card" id="resume-card">
+      <p class="resume-card-year"></p>
+      <p class="resume-card-title"></p>
+      <p class="resume-card-sub-title"></p>
+      <p class="resume-card-content"></p>
+    </template>
+    <div class="resume-card-container" id="resume-card-container"></div>
+
+    <script>
+      // Get all navigation links and sections
+      const navLinks = document.querySelectorAll("nav a");
+      const sections = document.querySelectorAll("section");
+
+      // Function to update active nav link on scroll
+      function updateActiveLink() {
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").includes(currentSection)) {
+            link.classList.add("active");
+          }
+        });
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", updateActiveLink);
+
+      // Smooth scrolling and keeping nav active on click
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          // Remove active class from all links
+          navLinks.forEach((nav) => nav.classList.remove("active"));
+
+          // Add active class to clicked link
+          link.classList.add("active");
+
+          // Smooth scroll to the section
+          const targetSection = document.querySelector(
+            link.getAttribute("href")
+          );
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+    <script src="resume-card.js"></script>
+  </body>
+</html>

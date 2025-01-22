@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="my-portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo"><a href="#home">Rohit</a></div>
+        <div class="menu-icon" id="menu-icon">
+          &#9776;
+          <!-- Hamburger icon -->
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+      <!-- <img class="hero-image" /> -->
+      <p><span>HELLO!</span></p>
+      <p>I'm <span>Rohit Kumar</span></p>
+      <p>A Front-End Developer</p>
+      <div class="hero-button-container">
+        <button>Hire me</button>
+        <button>My works</button>
+      </div>
+    </section>
+    <!-- About me section -->
+    <section id="about" class="about">
+      <img src="profile-picture.png" alt="My image" class="about-image" />
+      <div class="content">
+        <p class="background-text">About</p>
+        <p class="title">About me</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+        <div class="about-info">
+          <p><span class="about-label">Name:</span> Rohit Kumar</p>
+          <p><span class="about-label">Date of birth:</span> March 22, 1995</p>
+          <p><span class="about-label">Address:</span> N S Palya, Bengaluru</p>
+          <p><span class="about-label">PIN code:</span> 560076</p>
+          <p><span class="about-label">Email:</span> poni2243548@gmail.com</p>
+          <p><span class="about-label">Phone:</span> +91-9304364669</p>
+        </div>
+        <p class="about-project-content">
+          <span class="about-project-count">120</span> Projects completed
+        </p>
+        <button class="cv-button">Download CV</button>
+      </div>
+    </section>
+    <!-- Resume section -->
+    <section id="resume" class="resume-container">
+      <div class="content" id="resume-content">
+        <p class="background-text" id="resume-background-text">Resume</p>
+        <p class="title">Resume</p>
+        <p class="sub-title" id="resume-sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+        <!-- Template for card creation -->
+        <template id="resume-card">
+          <div class="resume-card">
+            <p class="resume-card-year"></p>
+            <p class="resume-card-title"></p>
+            <p class="resume-card-sub-title"></p>
+            <p class="resume-card-content"></p>
+          </div>
+        </template>
+        <!-- Container to insert cards  -->
+        <div class="resume-card-container" id="resume-card-container"></div>
+        <button class="cv-button resume-button">Download CV</button>
+      </div>
+    </section>
+    <!-- Services section  -->
+    <section id="services" style="height: 100vh">Services</section>
+    <!-- Skills section -->
+    <section id="home">Skills</section>
+    <!-- Projects section  -->
+    <section id="projects">Projects</section>
+    <!-- Blog section  -->
+    <section id="blog">Blog</section>
+    <!-- Contact section  -->
+    <section id="contact">Contact</section>
+    <!-- Footer section  -->
+    <section id="footer">Footer</section>
+
+    <script src="my-portfolio.js"></script>
+    <script src="resume-card.js"></script>
+  </body>
+</html>
