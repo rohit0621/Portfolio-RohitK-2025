@@ -65,6 +65,10 @@ menuIcon.addEventListener("click", (e) => {
   navSection.classList.toggle("fade-in");
   navSection.classList.toggle("menu-active");
 });
+navSection.addEventListener("click", (e) => {
+  navSection.classList.toggle("fade-in");
+  navSection.classList.toggle("menu-active");
+});
 
 // Hide the nav menu when clicking anywhere outside of it
 document.addEventListener("click", (e) => {

@@ -16,35 +16,35 @@ createCard(
   "2013-2017",
   "Bachelor of Engineering",
   "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
+  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences."
+);
+createCard(
+  "2015-2019",
+  "Frontend Development Bootcamp",
+  "Tech Academy",
+  "Focused on building responsive websites using HTML5, CSS3, and JavaScript, and creating user-friendly interfaces."
+);
+createCard(
+  "2015-2019",
+  "Frontend Development Bootcamp",
+  "Tech Academy",
+  "Focused on building responsive websites using HTML5, CSS3, and JavaScript, and creating user-friendly interfaces."
+);
+createCard(
+  "2018",
+  "Freelance Developer",
+  "Self-employed",
+  "Worked with various clients on creating websites and web applications for small businesses and startups."
 );
 createCard(
   "2013-2017",
   "Bachelor of Engineering",
   "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
+  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences."
 );
 createCard(
-  "2013-2017",
-  "Bachelor of Engineering",
-  "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
-);
-createCard(
-  "2013-2017",
-  "Bachelor of Engineering",
-  "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
-);
-createCard(
-  "2013-2017",
-  "Bachelor of Engineering",
-  "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
-);
-createCard(
-  "2013-2017",
-  "Bachelor of Engineering",
-  "RNSIT",
-  "A passionate Frontend Developer with a keen eye for creating engaging and user-friendly web experiences. I specialize in turning ideas intovisually stunning, responsive, and functional websites."
+  "2015-2019",
+  "Frontend Development Bootcamp",
+  "Tech Academy",
+  "Focused on building responsive websites using HTML5, CSS3, and JavaScript, and creating user-friendly interfaces."
 );

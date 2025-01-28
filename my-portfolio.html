@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="my-portfolio.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
@@ -33,34 +38,35 @@
     </header>
 
     <!-- Hero section -->
-    <section class="hero" id="home">
-      <!-- <img class="hero-image" /> -->
-      <p><span>HELLO!</span></p>
-      <p>I'm <span>Rohit Kumar</span></p>
-      <p>A Front-End Developer</p>
-      <div class="hero-button-container">
-        <button>Hire me</button>
-        <button>My works</button>
+    <section id="home">
+      <div class="hero">
+        <p><span>HELLO!</span></p>
+        <p>I'm <span>Rohit Kumar</span></p>
+        <p>A Front-End Developer</p>
+        <div class="hero-button-container">
+          <button>Hire me</button>
+          <button>My works</button>
+        </div>
       </div>
     </section>
     <!-- About me section -->
     <section id="about" class="about">
-      <img src="profile-picture.png" alt="My image" class="about-image" />
-      <div class="content">
-        <p class="background-text">About</p>
+      <img src="profile-picture-no-bg.png" alt="My image" class="about-image" />
+      <div class="content" id="about-content">
+        <p class="background-text" id="about-background-text">About</p>
         <p class="title">About me</p>
-        <p class="sub-title">
+        <p class="sub-title" id="about-sub-title">
           A passionate Frontend Developer with a keen eye for creating engaging
           and user-friendly web experiences. I specialize in turning ideas into
           visually stunning, responsive, and functional websites.
         </p>
         <div class="about-info">
-          <p><span class="about-label">Name:</span> Rohit Kumar</p>
-          <p><span class="about-label">Date of birth:</span> March 22, 1995</p>
-          <p><span class="about-label">Address:</span> N S Palya, Bengaluru</p>
-          <p><span class="about-label">PIN code:</span> 560076</p>
-          <p><span class="about-label">Email:</span> poni2243548@gmail.com</p>
-          <p><span class="about-label">Phone:</span> +91-9304364669</p>
+          <p><span class="about-label">Name :</span> Rohit Kumar</p>
+          <p><span class="about-label">Date of birth :</span> March 22, 1995</p>
+          <p><span class="about-label">Address :</span> N S Palya, Bengaluru</p>
+          <p><span class="about-label">PIN code :</span> 560076</p>
+          <p><span class="about-label">Email :</span> poni2243548@gmail.com</p>
+          <p><span class="about-label">Phone :</span> +91-9304364669</p>
         </div>
         <p class="about-project-content">
           <span class="about-project-count">120</span> Projects completed
@@ -68,12 +74,12 @@
         <button class="cv-button">Download CV</button>
       </div>
     </section>
-    <!-- Resume section -->
-    <section id="resume" class="resume-container">
-      <div class="content" id="resume-content">
-        <p class="background-text" id="resume-background-text">Resume</p>
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <div class="content container">
+        <p class="background-text">Resume</p>
         <p class="title">Resume</p>
-        <p class="sub-title" id="resume-sub-title">
+        <p class="sub-title">
           A passionate Frontend Developer with a keen eye for creating engaging
           and user-friendly web experiences. I specialize in turning ideas into
           visually stunning, responsive, and functional websites.
@@ -89,23 +95,251 @@
         </template>
         <!-- Container to insert cards  -->
         <div class="resume-card-container" id="resume-card-container"></div>
-        <button class="cv-button resume-button">Download CV</button>
+        <button class="cv-button">Download CV</button>
       </div>
     </section>
     <!-- Services section  -->
-    <section id="services" style="height: 100vh">Services</section>
+
+    <section id="services" class="container">
+      <div class="content">
+        <p class="background-text">Services</p>
+        <p class="title">Services</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+      </div>
+      <div class="services-card-container" id="services-card-container"></div>
+    </section>
+
     <!-- Skills section -->
-    <section id="home">Skills</section>
+    <section id="skills" class="container">
+      <div class="content">
+        <p class="background-text">Skills</p>
+        <p class="title">Skills</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+        <!-- Template for card creation -->
+        <template id="skills-card">
+          <div class="skills-card">
+            <div class="skills-content" id="skills-content">
+              <p class="skills-card-title"></p>
+              <p class="skills-card-percentage"></p>
+            </div>
+            <div class="skills-card-progress-container">
+              <div class="skills-card-progress"></div>
+            </div>
+          </div>
+        </template>
+        <!-- Container to insert cards  -->
+        <div class="skills-card-container" id="skills-card-container"></div>
+      </div>
+    </section>
     <!-- Projects section  -->
-    <section id="projects">Projects</section>
+    <section id="projects" class="container">
+      <div class="content">
+        <p class="background-text">Projects</p>
+        <p class="title">Projects</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+
+        <!-- Template for card creation -->
+        <template id="projects-card">
+          <div class="projects-card">
+            <img src="" alt="projects images" class=".projects-card-image" />
+          </div>
+        </template>
+        <!-- Container to insert cards  -->
+        <div class="projects-card-container" id="projects-card-container"></div>
+      </div>
+    </section>
     <!-- Blog section  -->
-    <section id="blog">Blog</section>
+
+    <section id="blog">
+      <div class="content container">
+        <p class="background-text">Blog</p>
+        <p class="title">Our Blog</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+        <!-- Template for card creation -->
+        <template id="blog-article">
+          <div class="blog-article">
+            <img src="" alt="blog-image" class="blog-article-image" />
+            <div class="blog-article-date-container">
+              <p class="blog-article-date"></p>
+              <p class="blog-article-blogger"></p>
+              <div class="blog-article-comments-container">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/sf-regular-filled/20/f8c651/comments.png"
+                  alt="comments"
+                />
+                <p class="blog-article-comments"></p>
+              </div>
+            </div>
+            <p class="blog-article-title"></p>
+            <p class="blog-article-sub-title"></p>
+          </div>
+        </template>
+        <!-- Container to insert cards  -->
+        <div class="blog-article-container" id="blog-article-container"></div>
+      </div>
+      <div>
+        <div class="blog-bg-image">
+          <!-- Template for card creation -->
+          <template id="blog-card">
+            <div class="blog-card">
+              <p class="blog-card-count"></p>
+              <p class="blog-card-title"></p>
+            </div>
+          </template>
+          <!-- Container to insert cards  -->
+          <div class="blog-card-container" id="blog-card-container"></div>
+          <div id="blog-bottom">
+            <p class="blog-title">I'm available for Development</p>
+            <p class="blog-sub-title">
+              A passionate Frontend Developer with a keen eye for creating
+              engaging and user-friendly web experiences. I specialize in
+              turning ideas into visually stunning, responsive, and functional
+              websites.
+            </p>
+            <button class="cv-button" id="blog-button">Hire me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact section  -->
-    <section id="contact">Contact</section>
+    <section id="contact">
+      <div class="content container" id="contacts-container">
+        <p class="background-text">Contact</p>
+        <p class="title">Contact Me</p>
+        <p class="sub-title">
+          A passionate Frontend Developer with a keen eye for creating engaging
+          and user-friendly web experiences. I specialize in turning ideas into
+          visually stunning, responsive, and functional websites.
+        </p>
+        <!-- Template for card creation -->
+        <template id="contacts-item">
+          <div class="contacts-item">
+            <div class="icon" id="contacts-icon"><i class="icon-name"></i></div>
+            <p class="item-title">Title</p>
+            <p class="item-details">Details</p>
+          </div>
+        </template>
+        <!-- Container to insert cards  -->
+        <div
+          class="contacts-items-container"
+          id="contacts-items-container"
+        ></div>
+        <div class="contacts-bottom-container">
+          <div class="contacts-image-container">
+            <img
+              src="profile-picture-no-bg.png"
+              alt="My image"
+              class="contacts-image"
+            />
+          </div>
+
+          <div class="contacts-form-container">
+            <form class="form" action="/submit" method="'POST">
+              <input id="" name type="text" placeholder="Your Name" required />
+              <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <input id="subject" type="text" placeholder="Subject" required />
+              <textarea name="textarea-name" placeholder="Message"></textarea>
+
+              <button type="submit" id="button" class="cv-button">
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer section  -->
-    <section id="footer">Footer</section>
+    <section id="footer">
+      <div class="footer-container container">
+        <div class="footer-columns">
+          <p class="footer-columns-title">About</p>
+          <p class="footer-columns-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+            aliquam perferendis debitis quas vel praesentium sequi
+            exercitationem quasi illo! Et asperiores harum, atque ducimus nulla
+            quaera.
+          </p>
+          <div class="icons-container">
+            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <p class="footer-columns-title">Links</p>
+          <div class="footer-columns-body">
+            <!-- Template  -->
+            <template id="footer-link">
+              <li>
+                <div><i class="fa-solid fa-arrow-right-long"></i></div>
+                <a href="#home" class="footer-link">Home</a>
+              </li>
+            </template>
+            <ul class="footer-items-list" id="footer-links-list"></ul>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <p class="footer-columns-title">Services</p>
+          <div class="footer-columns-body">
+            <ul class="footer-items-list" id="footer-services-list"></ul>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <p class="footer-columns-title">Have Questions?</p>
+          <div class="footer-columns-body footer-items-list">
+            <div class="footer-contacts-item">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <p>N S Palya, Bengaluru, Karnataka PIN-560076</p>
+            </div>
+            <div class="footer-contacts-item">
+              <div><i class="fa-solid fa-phone"></i></div>
+              <p>+91-9304364669</p>
+            </div>
+            <div class="footer-contacts-item">
+              <div><i class="fa-solid fa-envelope"></i></div>
+              <p>poni2243548@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright &copy;2025 All rights reserved</p>
+        <p>|</p>
+        <p>This is made with <i class="fa-solid fa-heart"></i> love by Rohit</p>
+      </div>
+    </section>
 
     <script src="my-portfolio.js"></script>
     <script src="resume-card.js"></script>
+    <script src="services-card.js"></script>
+    <script src="skills-card.js"></script>
+    <script src="projects-card.js"></script>
+    <script src="blog.js"></script>
+    <script src="contact.js"></script>
+    <script src="footer.js"></script>
   </body>
 </html>
